@@ -282,14 +282,14 @@ p a {
   border: none;
 }
 
-<!--RegisterformStyles-->
+/*--RegisterformStyles--*/
 
 .register-form{
    box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
    margin:10px 0;
 }
 
-.register-form textarea,input,#register-btn{
+textarea,input,#register-btn{
   margin: 40px 25px;
   display: block;
   padding: 10px 0;
