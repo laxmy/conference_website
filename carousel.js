@@ -1,9 +1,11 @@
+$(document).ready(function() {
+
 var currentIndex = 0;
-var items = $('.carousel-slide');
+var items = $('.slide');
 var itemAmt = items.length;
 
 function cycleItems() {
-  var item = $('.carousel-slide').eq(currentIndex);
+  var item = $('.carousel .slide').eq(currentIndex);
   items.hide();
   item.css('display','inline-block');
 }
@@ -14,7 +16,7 @@ var autoSlide = setInterval(function() {
     currentIndex = 0;
   }
   cycleItems();
-}, 1000);
+},4000);
 
 $('#next').click(function() {
   clearInterval(autoSlide);
@@ -32,4 +34,6 @@ $('#prev').click(function() {
     currentIndex = itemAmt - 1;
   }
   cycleItems();
+});
+
 });
